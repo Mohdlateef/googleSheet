@@ -1,22 +1,19 @@
 * {
   font-family: Arial, Helvetica, sans-serif;
-  margin :0;
-  
+  margin: 0;
 }
-body{
+body {
   padding: 0;
 }
-.top_header li:hover{
+.top_header li:hover {
   cursor: pointer;
   background-color: #eeebeb;
-height: fit-content;
-
+  height: fit-content;
 }
-.top_header li
-{
-  padding:4px 6px;
+.top_header li {
+  padding: 4px 6px;
   margin: 0;
-  border-radius:5px;
+  border-radius: 5px;
 }
 body::-webkit-scrollbar {
   display: none;
@@ -30,7 +27,7 @@ body::-webkit-scrollbar {
   padding-inline: 55px;
 }
 #root {
-  height: 67vh;
+  height: 70vh;
   width: 100%;
   /* border:1px solid red; */
   /* border: 2px solid red; */
@@ -38,7 +35,7 @@ body::-webkit-scrollbar {
   /* text-align: center; */
   /* position: relative;
      */
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
   font-family: monospace;
 }
 
@@ -70,14 +67,16 @@ body::-webkit-scrollbar {
   display: flex;
   width: 40px !important;
   height: 37px;
-  background-color: rgb(232, 33, 33);
+  border: 1px solid #ecf0f1;
+
+  background-color: rgb(190, 181, 181);
   /* border: 1px solid gray; */
   position: sticky;
   top: 0;
   left: 0;
 }
-#font_family{
-  background:none;
+#font_family {
+  background: none;
   outline: none;
   border: none;
 }
@@ -95,8 +94,9 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   font-weight: 600;
+  border-collapse: collapse;
 }
-#body{
+#body {
   display: flex;
   /* border:10px solid yellow; */
   width: fit-content;
@@ -116,7 +116,7 @@ body::-webkit-scrollbar {
   justify-content: center;
   align-items: center;
   font-weight: 600;
-
+  border-collapse: collapse;
   width: 40px;
   height: 37px !important;
 }
@@ -126,13 +126,14 @@ body::-webkit-scrollbar {
   height: fit-content;
 }
 .body-cells {
-  width: 170px;
+  width: 172px;
   height: 37px;
   background-color: white;
   border: 1px solid #ecf0f1;
   overflow: hidden;
   padding: 5px;
   box-sizing: border-box;
+  border-collapse: collapse;
   /* font-family: Arial, Helvetica, sans-serif; */
   /* display: flex; */
   /* justify-content: center; */
@@ -155,4 +156,12 @@ body::-webkit-scrollbar {
 }
 #download:hover {
   cursor: pointer;
+}
+#importexport {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+input:checked + label {
+  background-color: rgb(167, 167, 157);
 }

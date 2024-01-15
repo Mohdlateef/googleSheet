@@ -53,30 +53,35 @@
         placeholder="16"
       />
       <div id="font_style">
-        <label for="bold" class="material-symbols-outlined"> format_bold</label>
         <input type="checkbox" id="bold" name="isBold" />
+        <label for="bold" class="material-symbols-outlined"> format_bold</label>
+
+        <input type="checkbox" id="Italic" name="isItalic" />
         <label for="Italic" class="material-symbols-outlined"
           >format_italic</label
         >
-        <input type="checkbox" id="Italic" name="isItalic" />
+
+        <input type="checkbox" id="underline" name="isUnderline" />
         <label for="underline" class="material-symbols-outlined"
           >format_underlined</label
         >
-        <input type="checkbox" id="underline" name="isUnderline" />
       </div>
+
       <div id="text_align">
+        <input type="radio" value="left" id="left" name="text_align" />
         <label for="left" class="material-symbols-outlined"
           >format_align_left</label
         >
-        <input type="radio" value="left" id="left" name="text_align" />
+
+        <input type="radio" id="center" value="center" name="text_align" />
         <label for="center" class="material-symbols-outlined"
           >format_align_center</label
         >
-        <input type="radio" id="center" value="center" name="text_align" />
+
+        <input type="radio" value="right" id="Right" name="text_align" />
         <label for="Right" class="material-symbols-outlined"
           >format_align_right</label
         >
-        <input type="radio" value="right" id="Right" name="text_align" />
       </div>
       <div id="color">
         <label for="font_color" class="material-symbols-outlined">
@@ -105,13 +110,11 @@
     </div>
     <div id="root">
       <div class="header">
-        <div class="first-child">fgdfgdgfhdfg</div>
+        <div class="first-child"></div>
         <!-- <div id="header-cells-container"></div> -->
       </div>
-        <div id="body">
+      <div id="body">
         <div id="sno-container"></div>
-
-
       </div>
     </div>
     <script src="./script1.js"></script>
